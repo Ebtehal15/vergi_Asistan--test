@@ -6,7 +6,7 @@ import os
 AUTH0_DOMAIN = "dev-jyu3bfhckum44bfk.eu.auth0.com"
 CLIENT_ID = "yTs0oQV1FHv8z2gK9z10qtCVOxY8LtNE"
 CLIENT_SECRET = "tZiFo00tHzZvf6wgcwC198UTC_x2vLg3_VeEmB3mnjqK0QqGgQywMWEkkEVMif72"
-REDIRECT_URI = "https://vergi-asisatni.onrender.com/"
+REDIRECT_URI = "https://vergiasistan--test-eoi7uvyjszyxkn4fzwdkwr.streamlit.app/"
 
 # Auth0 Endpoints
 AUTHORIZATION_URL = f"https://{AUTH0_DOMAIN}/authorize"
