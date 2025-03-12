@@ -44,3 +44,8 @@ else:
     st.image(st.session_state['user_info']['picture'])
     if st.button("Logout"):
         logout()
+try:
+    token = oauth.fetch_token(TOKEN_URL, authorization_response=REDIRECT_URI, client_secret=CLIENT_SECRET)
+    print(token)  # Debugging
+except Exception as e:
+    print(f"OAuth Error: {e}")
