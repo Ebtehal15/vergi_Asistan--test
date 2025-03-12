@@ -45,7 +45,12 @@ else:
     if st.button("Logout"):
         logout()
 try:
-    token = oauth.fetch_token(TOKEN_URL, authorization_response=REDIRECT_URI, client_secret=CLIENT_SECRET)
-    print(token)  # Debugging
+    token = oauth.fetch_token(
+        TOKEN_URL,
+        authorization_response=REDIRECT_URI,
+        client_secret=CLIENT_SECRET
+    )
+    print("Token fetched successfully:", token)
 except Exception as e:
-    print(f"OAuth Error: {e}")
+    print("OAuth Error:", e)
+
